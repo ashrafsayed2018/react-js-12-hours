@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f1f5f8;
+}
+
+.book-list {
+  width: 90vw;
+  max-width: 1170px;
+  display: grid;
+  margin: 5rem auto;
+  gap: 2rem;
+}
+
+.book {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.book img {
+  width: 100%;
+  object-cover: fit;
+}
+.book h2,
+.book h4 {
+  margin-top: 1rem;
+}
+.book h2 {
+  font-size: 1rem;
+}
+
+.book h4 {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 760px) {
+  .book-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
